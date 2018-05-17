@@ -4,6 +4,11 @@
 # Function: Make ascii art from pictures
 # Usage	  : python program.py image.jpg art.txt
 ##################################################
+try:
+    from PIL import Image
+except ImportError:
+    import Image
+
 import Image, sys
 
 img=Image.open(sys.argv[1],'r')
