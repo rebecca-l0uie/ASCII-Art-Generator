@@ -20,7 +20,12 @@ img=img.resize((w,h), Image.BILINEAR) #or BICUBIC
 img=img.convert('L') #greyscale
 scale = ['@','#','A','%','S','<', '*','+', ':','.']
 
-f=open(sys.argv[2],'w') #Opening 2nd sys argv to create the imagge
+#Lines 24-26 generte the name of the ASCII art file
+name=str(sys.argv[1])		#Converting sys.argv 1 into string
+n=name.split(".")			#Spliting the string to exclude the file type
+newname=n[0]+"-ASCII.png"	#Asigning a varible to be the original name with the additon of "ASCII.png"
+
+f=open(newname,'w') #Opening new file with name defined on line 26
 for y in range(h):
 	for x in range(w):
 		lum=img.getpixel((x,y)) #int from 0-255
