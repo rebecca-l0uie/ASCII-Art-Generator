@@ -1,14 +1,10 @@
 # ASCII-Art-Generator
-ASCII art generator. Utilizes system arguments and file I/O
 
-<h2>ASCII Art Generator</h>
 <p align="center">
-  <img style="padding:0 15px" src="AppleExample.png" height="500" align="right" hspace="20" vspace="20">
+<img style="padding:0 15px" src="AppleExample.png" height="500" align="right" hspace="20" vspace="20">
+</p>
 <body>
 <p>ASCII art generator. Utilizes system arguments and file I/O</p>
-</p>
-<p align="center">
-  </a>
 </p>
 <h2>Prerequisites</h2>
   <ul>
